@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hospital.management.entity.User;
 import com.hospital.management.repository.UserRepository;
 
-@RestController
-@RequestMapping("/api")
 @CrossOrigin(origins = "*")
+@RestController
+@RequestMapping("/api/users")
 public class UserController {
 
     @Autowired

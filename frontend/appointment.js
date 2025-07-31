@@ -12,12 +12,15 @@ async function loadDropdowns() {
         patientSelect.innerHTML = '<option value="">Select Patient</option>';
         doctorSelect.innerHTML = '<option value="">Select Doctor</option>';
 
-        patients.forEach(p => {
-            const option = document.createElement("option");
-            option.value = p.id;
-            option.textContent = `${p.name} (Age ${p.age})`;
-            patientSelect.appendChild(option);
-        });
+        // Only include patients whose status is exactly "appointment"
+        patients
+            .filter(p => p.status && p.status.toLowerCase() === "appointment")
+            .forEach(p => {
+                const option = document.createElement("option");
+                option.value = p.id;
+                option.textContent = `${p.name} (Age ${p.age})`;
+                patientSelect.appendChild(option);
+            });
 
         doctors.forEach(d => {
             const option = document.createElement("option");
@@ -30,6 +33,7 @@ async function loadDropdowns() {
         alert("Failed to load dropdown data.");
     }
 }
+
 
 // Submit appointment
 document.getElementById("appointmentForm").addEventListener("submit", async (e) => {

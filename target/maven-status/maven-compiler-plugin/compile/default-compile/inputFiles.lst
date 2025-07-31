@@ -4,13 +4,16 @@ E:\hospital-management\src\main\java\com\hospital\management\repository\BillRepo
 E:\hospital-management\src\main\java\com\hospital\management\repository\MedicalRecordRepository.java
 E:\hospital-management\src\main\java\com\hospital\management\repository\DoctorRepository.java
 E:\hospital-management\src\main\java\com\hospital\management\entity\Appointment.java
+E:\hospital-management\src\main\java\com\hospital\management\repository\UserRepository.java
 E:\hospital-management\src\main\java\com\hospital\management\entity\Bill.java
 E:\hospital-management\src\main\java\com\hospital\management\entity\Doctor.java
 E:\hospital-management\src\main\java\com\hospital\management\entity\MedicalRecord.java
 E:\hospital-management\src\main\java\com\hospital\management\repository\PatientRepository.java
+E:\hospital-management\src\main\java\com\hospital\management\controller\UserController.java
 E:\hospital-management\src\main\java\com\hospital\management\controller\AppointmentController.java
 E:\hospital-management\src\main\java\com\hospital\management\HospitalManagementApplication.java
 E:\hospital-management\src\main\java\com\hospital\management\repository\AppointmentRepository.java
 E:\hospital-management\src\main\java\com\hospital\management\controller\DoctorController.java
 E:\hospital-management\src\main\java\com\hospital\management\controller\MedicalRecordController.java
+E:\hospital-management\src\main\java\com\hospital\management\entity\User.java
 E:\hospital-management\src\main\java\com\hospital\management\controller\BillController.java
