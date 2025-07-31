@@ -6,14 +6,11 @@ COPY . .
 
 RUN mvn clean install -DskipTests
 
-# -----------------------------------------
-
 FROM eclipse-temurin:21-jdk-alpine
 
 WORKDIR /app
 
 COPY --from=build /app/target/hospital-management.jar app.jar
-
 
 EXPOSE 8080
 
