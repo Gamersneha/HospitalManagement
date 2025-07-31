@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Records</title>
+    <link rel="stylesheet" href="medical.css">
+</head>
+<body>
+    <h1>Medical Records Management</h1>
+
+    <section>
+        <h2>Add Medical Record</h2>
+        <form id="medicalForm">
+<select id="patientId" required>
+    <option value="">Select Patient</option>
+</select>
+            <input type="text" id="diagnosis" placeholder="Diagnosis" required />
+            <input type="text" id="treatmentGiven" placeholder="Treatment Given" required />
+            <input type="text" id="prescription" placeholder="Prescription" required />
+            <input type="date" id="date" required />
+            <button type="submit">Save Record</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <section>
+        <h2>All Medical Records</h2>
+        <button id="refreshBtn">Refresh List</button>
+        <table id="recordsTable" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Patient Name</th>
+                    <th>Diagnosis</th>
+                    <th>Treatment</th>
+                    <th>Prescription</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="medical.js"></script>
+</body>
+</html>

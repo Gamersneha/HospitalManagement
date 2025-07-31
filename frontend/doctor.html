@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Management</title>
+  <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Doctor Management</h1>
+    
+    <form id="doctorForm">
+      <input type="text" id="name" placeholder="Doctor Name" required>
+      <input type="text" id="specialization" placeholder="Specialization" required>
+      <input type="text" id="contactNumber" placeholder="Contact Number" required>
+      <input type="text" id="availability" placeholder="Availability (e.g., Mon-Fri)" required>
+      <button type="submit">Add Doctor</button>
+    </form>
+
+    <h2>Doctors List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Specialization</th>
+          <th>Contact</th>
+          <th>Availability</th>
+          <th>Actions</th>
+
+        </tr>
+      </thead>
+      <tbody id="doctorTableBody">
+        <!-- Doctors will be loaded here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="doctor.js"></script>
+</body>
+</html>
