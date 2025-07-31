@@ -8,17 +8,23 @@ services:
       MYSQL_ROOT_PASSWORD: Yugsaha87!
       MYSQL_DATABASE: hospital_db1
     ports:
-      - "3307:3306"
+      - "3307:3306"  # Use 3307 if 3306 is taken
     volumes:
       - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   app:
     build: .
     container_name: hospital-app
+    depends_on:
+      db:
+        condition: service_healthy
     ports:
       - "8080:8080"
-    depends_on:
-      - db
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/hospital_db1
       SPRING_DATASOURCE_USERNAME: root
