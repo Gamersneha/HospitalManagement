@@ -3,6 +3,7 @@
 
 # Maven build directory
 /target/
+*.class
 *.jar
 *.war
 *.ear
