@@ -1,0 +1,43 @@
+# === Java/Maven build ===
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# === Logs ===
+*.log
+
+# === IDE-specific ===
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# === OS-specific ===
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# === Environment/config files ===
+.env
+*.local
+*.tmp
+*.bak
+
+# === Docker ===
+*.pid
+docker-compose.override.yml
+
+# === Nixpacks ===
+.nixpack.lock
+
+# === Node/Frontend (if applicable) ===
+node_modules/
+dist/
+build/
+
+# === Misc ===
+*.swp
+*.swo
