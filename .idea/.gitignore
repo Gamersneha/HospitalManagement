@@ -1,13 +1,6 @@
 # VSCode settings
 .vscode/
 
-# Maven build directory
-/target/
-*.class
-*.jar
-*.war
-*.ear
-
 # Logs
 *.log
 
