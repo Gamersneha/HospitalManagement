@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
   const status = document.getElementById("loginStatus");
 
   try {
-    const response = await fetch("http://localhost:8080/api/users/login", {
+    const response = await fetch("https://hospitalmanagement-q87w.onrender.com/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

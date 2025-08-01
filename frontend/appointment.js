@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080/api";
+const API_BASE = "https://hospitalmanagement-q87w.onrender.com/api";
 
 // Populate patients and doctors dropdown
 async function loadDropdowns() {

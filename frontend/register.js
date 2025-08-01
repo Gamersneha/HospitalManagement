@@ -22,7 +22,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
   // ✅ Send POST request to backend
   try {
-    const response = await fetch("http://localhost:8080/api/users/register", {
+    const response = await fetch("https://hospitalmanagement-q87w.onrender.com/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8080/api/bills";
-const PATIENT_API = "http://localhost:8080/api/patients";
+const API_URL = "https://hospitalmanagement-q87w.onrender.com/api/bills";
+const PATIENT_API = "https://hospitalmanagement-q87w.onrender.com/api/patients";
 
 // Load all bills and patients on page load
 document.addEventListener("DOMContentLoaded", () => {
@@ -55,7 +55,7 @@ async function loadBills() {
 
 // Load patient names into the dropdown
 async function loadPatientDropdown() {
-    const res = await fetch("http://localhost:8080/api/patients");
+    const res = await fetch("https://hospitalmanagement-q87w.onrender.com/api/patients");
     const patients = await res.json();
 
     const select = document.getElementById("patientId");

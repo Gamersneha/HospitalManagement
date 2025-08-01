@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8080/api/medical-records";
-const PATIENT_API = "http://localhost:8080/api/patients";
+const API_URL = "https://hospitalmanagement-q87w.onrender.com/api/medical-records";
+const PATIENT_API = "https://hospitalmanagement-q87w.onrender.com/api/patients";
 
 document.getElementById("medicalForm").addEventListener("submit", async (e) => {
     e.preventDefault();
