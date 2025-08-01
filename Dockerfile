@@ -1,5 +1,5 @@
 # Use Java 21
-FROM eclipse-temurin:21 AS build
+FROM eclipse-temurin:17 AS build
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY . .
 RUN ./mvnw clean package -DskipTests
 
 # Final image
-FROM eclipse-temurin:21
+FROM eclipse-temurin:17
 
 WORKDIR /app
 
