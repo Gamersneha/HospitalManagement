@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hospital.management.entity.User;
 import com.hospital.management.repository.UserRepository;
 
-@CrossOrigin(origins = "https://gamersneha.github.io")
-
+@CrossOrigin(origins = "https://hospitalmanagement-q87w.onrender.com/api/users")
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
