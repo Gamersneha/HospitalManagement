@@ -19,7 +19,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
       // ✅ Login successful
       status.style.color = "green";
       status.textContent = "Login successful! Redirecting...";
-      window.location.href = "Frontpage.html";  // Redirect to dashboard
+      window.location.href = "FrontPage.html";  // Redirect to dashboard
     } else {
       // ❌ Login failed
       const message = await response.text();

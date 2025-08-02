@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bills")
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5500"})  // Allow frontend access
+@CrossOrigin(origins = {"https://hospitalmanagement-q87w.onrender.com/api/bills"})  // Allow frontend access
 public class BillController {
 
     private final BillRepository billRepository;

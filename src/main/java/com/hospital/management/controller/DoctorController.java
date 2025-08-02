@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/doctors")
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5500"}) // Fix for CORS issue
+@CrossOrigin(origins = {"https://hospitalmanagement-q87w.onrender.com/api/doctors"}) // Fix for CORS issue
 public class DoctorController {
 
     private final DoctorRepository repo;

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://127.0.0.1:5500")  // Allow frontend access
+@CrossOrigin(origins = "https://hospitalmanagement-q87w.onrender.com/api/medical-records")  // Allow frontend access
 @RestController
 @RequestMapping("/api/medical-records")
 public class MedicalRecordController {
