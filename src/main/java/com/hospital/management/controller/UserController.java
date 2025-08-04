@@ -13,10 +13,7 @@ import com.hospital.management.entity.User;
 import com.hospital.management.repository.UserRepository;
 
 @CrossOrigin(
-    origins = {
-        "https://hospitalmanagement-q87w.onrender.com",
-        "https://gamersneha.github.io/FrontendHospital"
-    },
+    origins = {"*"},
     allowCredentials = "true"
 )
 @RestController
