@@ -14,7 +14,7 @@ import com.hospital.management.repository.UserRepository;
 
 @CrossOrigin(
     origins = {
-        "https://hospitalmanagement-q87w.onrender.com",
+        "https://hospitalmanagement-q87w.onrender.com/api/users",
         "https://gamersneha.github.io/FrontendHospital"
     },
     allowCredentials = "true"
