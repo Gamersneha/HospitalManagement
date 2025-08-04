@@ -12,10 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hospital.management.entity.User;
 import com.hospital.management.repository.UserRepository;
 
-@CrossOrigin(
-    origins = {"*"},
-    allowCredentials = "true"
-)
+@CrossOrigin(origins = "*", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
