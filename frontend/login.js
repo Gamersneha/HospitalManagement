@@ -16,12 +16,12 @@ document.getElementById("loginForm").addEventListener("submit", async function (
     });
 
     if (response.ok) {
-      // ✅ Login successful
+      // Login successful
       status.style.color = "green";
       status.textContent = "Login successful! Redirecting...";
       window.location.href = "FrontPage.html";  // Redirect to dashboard
     } else {
-      // ❌ Login failed
+      // Login failed
       const message = await response.text();
       status.style.color = "red";
       status.textContent = message || "Invalid credentials";
