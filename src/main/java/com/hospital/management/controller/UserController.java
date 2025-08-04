@@ -3,7 +3,6 @@ package com.hospital.management.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,13 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.hospital.management.entity.User;
 import com.hospital.management.repository.UserRepository;
 
-@CrossOrigin(
-    origins = {
-        "https://hospitalmanagement-q87w.onrender.com/api/users",
-        "https://gamersneha.github.io/FrontendHospital"
-    },
-    allowCredentials = "true"
-)
+
 @RestController
 @RequestMapping("/api/users")
 public class UserController {

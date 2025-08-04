@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-@CrossOrigin(origins = {"https://hospitalmanagement-q87w.onrender.com/api/doctors"}) // Fix for CORS issue
 
 @RestController
 @RequestMapping("/api/doctors")
